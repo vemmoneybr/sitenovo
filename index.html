@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
+    <!-- --- -->
+    <!-- css files link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- --- -->
+    <title>vm_prototipo</title>
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <div class="flex flex--jc-sbetween flex--ai-center max-height">
+            <div class="flex-column">
+                <img src="img/vm_logo.png" alt="Logo Vem Money" class="enterprise-logo">
+            </div>
+            <div class="flex-column">
+                <nav>
+                    <img src="img/list.svg" alt="Ícone menu mobile" class="mobile-menu-icon" onclick="showHeaderNavbar()">
+                    <ul class="header-navbar">
+                        <li class="header-navbar__item dropdown" onclick="showHeaderSubnavbar(0)">
+                            <span class="dropdown-txt">Para você</span>
+                            <ul class="header-subnavbar">
+                                <li class="header-subnavbar__item">
+                                    <a href="#" class="header-subnavbar__link">Parcelar Cirurgia</a>
+                                </li>
+                                <li class="header-subnavbar__item">
+                                    <a href="#" class="header-subnavbar__link">Programar Cirurgia (em breve)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-navbar__item dropdown" onclick="showHeaderSubnavbar(1)">
+                            <span class="dropdown-txt">Para clínicas</span>
+                            <ul class="header-subnavbar">
+                                <li class="header-subnavbar__item">
+                                    <a href="#" class="header-subnavbar__link">Cirurgia no boleto</a>
+                                </li>
+                                <li class="header-subnavbar__item">
+                                    <a href="#" class="header-subnavbar__link">Financiar Equipamento</a>
+                                </li>
+                                <li class="header-subnavbar__item">
+                                    <a href="#" class="header-subnavbar__link">Antecipação de Recebíveis</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-navbar__item">
+                            <a href="#" class="header-navbar__link">Sobre nós</a>
+                        </li>
+                        <li class="header-navbar__item dropdown" onclick="showHeaderSubnavbar(2)">
+                            <span class="dropdown-txt">Ajuda</span>
+                            <ul class="header-subnavbar">
+                                <li class="header-subnavbar__item">
+                                    <a href="#" class="header-subnavbar__link">Como funciona?</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-navbar__item">
+                            <a href="#" class="header-navbar__link filled">Criar conta</a>
+                        </li>
+                        <li class="header-navbar__item">
+                            <a href="#" class="header-navbar__link outlined">Entrar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+        <article class="welcome-article">
+            <div class="main-bg">
+                <h1 class="welcome-title">Aqui você encontra as melhores soluções de crédito para saúde.</h1>
+            </div>
+            <div class="redirect-flex">
+                <div class="redirect-card-container">
+                    <div class="redirect-card">
+                        <img src="img/imagens_inicio/upc-scan.svg" alt="Ilustração do cartão" class="redirect-card__image">
+                        <span class="redirect-card__text">Parcele sua cirurgia em até 36x no boleto</span>
+                        <a href="procedimento.html" class="redirect-card__link">Quero fazer minha cirurgia</a>
+                    </div>
+                </div>
+                <div class="redirect-card-container">
+                    <div class="redirect-card">
+                        <img src="img/imagens_inicio/shield-fill-check.svg" alt="Ilustração do cartão" class="redirect-card__image">
+                        <span class="redirect-card__text">Receba antes de realizar a cirurgia</span>
+                        <a href="#" class="redirect-card__link">Para clínicas e hospitais</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="benefits-article">
+            <div class="flex flex--jc-center flex--ai-center">
+                <div class="flex-column b-image-container">
+                    <img src="img/imagens_inicio/benefits-illustration.jpg" alt="Ilustração benefícios" class="benefits-illustration">
+                </div>
+                <div class="flex-column">
+                    <h1 class="benefits-title">PROCEDIMENTOS ESTÉTICOS</h1>
+                    <h2 class="benefits-subtitle"><b>Cirúrgicos</b> e <b>não cirúrgicos</b></h2>
+                    <p class="benefits-desc">Agora você pode realizar o seu sonho e pagar no boleto em até 36x com a Vem Money.</p>
+                    <a href="#" class="benefits-link">Saiba mais</a>
+                </div>
+            </div>
+        </article>
+        <article class="tutorial-article">
+            <h1 class="tutorial-article__title">É rápido, é digital!</h1>
+            <div class="tutorial-flex">
+                <div class="tutorial-grid">
+                    <div class="tutorial-step">
+                        <div class="flex-column">
+                            <span class="tutorial-step__number">01</span>
+                        </div>
+                        <div class="flex-column">
+                            <h1 class="tutorial-step__name">Solicitação</h1>
+                            <p class="tutorial-step__desc">Escolha o valor, a quantidade de parcelas e qual procedimento deseja.</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-step">
+                        <div class="flex-column">
+                            <span class="tutorial-step__number">02</span>
+                        </div>
+                        <div class="flex-column">
+                            <h1 class="tutorial-step__name">Avaliação</h1>
+                            <p class="tutorial-step__desc">Nesta etapa é feita uma breve avaliação para liberação de crédito.</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-step">
+                        <div class="flex-column">
+                            <span class="tutorial-step__number">03</span>
+                        </div>
+                        <div class="flex-column">
+                            <h1 class="tutorial-step__name">Formalização</h1>
+                            <p class="tutorial-step__desc">Após aprovação, você assina o contrato digitalmente pelo link recebido no WhatsApp ou e-mail.</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-step">
+                        <div class="flex-column">
+                            <span class="tutorial-step__number">04</span>
+                        </div>
+                        <div class="flex-column">
+                            <h1 class="tutorial-step__name">Pagamento</h1>
+                            <p class="tutorial-step__desc">A clínica recebe o pagamento direto da instituição financeira e o procedimento é autorizado para agendamento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="platform-details-article">
+            <div class="pd-flex">
+                <div class="flex-column pd-image-container">
+                    <img src="img/imagens_inicio/plataform-details-illustration.png" alt="Ilustração benefícios" class="platform-details-illustration">
+                </div>
+                <div class="details-flex">
+                    <div class="detail">
+                        <img src="img/imagens_inicio/credit-card.svg" alt="Ícone cartão" class="detail-icon">
+                        <div class="details-text-container">
+                            <span class="detail-title">Sem limite no cartão? Sem problemas</span>
+                            <span class="detail-desc">Atender pacientes que não possuem limite no cartão de crédito.</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="img/imagens_inicio/receipt.svg" alt="Ícone cartão" class="detail-icon">
+                        <div class="details-text-container">
+                            <span class="detail-title">Parcelamento no Boleto</span>
+                            <span class="detail-desc">Oferecer parcelamento no boleto em até 36x para os pacientes.</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="img/imagens_inicio/cash-coin.svg" alt="Ícone cartão" class="detail-icon">
+                        <div class="details-text-container">
+                            <span class="detail-title">Receber à vista</span>
+                            <span class="detail-desc">Receber à vista antes de realizar os procedimentos.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="partners-article">
+            <h1 class="partners-title">Nossos parceiros</h1>
+            <h2 class="partners-subtitle">Conheça as instituições que podem trazer soluções de crédito para você</h2>
+            <section carrousel>
+  
+                <input id="slide-0" name="carrousel" type="radio" checked/>
+                <div class="slide">
+                  <label for="slide-10" class="back">◀</label>
+                  <div class="slide-content">
+                    <img src="img/logo_parceiros/bancorbras.png" alt="Logo parceiro" class="partner-logo">
+                  </div>
+                  <label for="slide-1" class="forward">▶</label>
+                </div>
+                
+                <input id="slide-1" name="carrousel" type="radio" />
+                <div class="slide">
+                  <label for="slide-0" class="back">◀</label>
+                  <div class="slide-content">
+                    <img src="img/logo_parceiros/baru.png" alt="Logo parceiro" class="partner-logo">
+                  </div>
+                  <label for="slide-2" class="forward">▶</label>
+                </div>
+                
+                <input id="slide-2" name="carrousel" type="radio" />
+                <div class="slide">
+                  <label for="slide-1" class="back">◀</label>
+                  <div class="slide-content">
+                    <img src="img/logo_parceiros/brb.png" alt="Logo parceiro" class="partner-logo">
+                  </div>
+                  <label for="slide-3" class="forward">▶</label>
+                </div>  
+              
+                <input id="slide-3" name="carrousel" type="radio" />
+                <div class="slide">
+                  <label for="slide-2" class="back">◀</label>
+                  <div class="slide-content">
+                    <img src="img/logo_parceiros/clinica_certa.png" alt="Logo parceiro" class="partner-logo">
+                  </div>
+                  <label for="slide-4" class="forward">▶</label>
+                </div>
+
+                <input id="slide-4" name="carrousel" type="radio" />
+                <div class="slide">
+                  <label for="slide-3" class="back">◀</label>
+                  <div class="slide-content">
+                    <img src="img/logo_parceiros/fsfx.png" alt="Logo parceiro" class="partner-logo">
+                  </div>
+                  <label for="slide-5" class="forward">▶</label>
+                </div>
+
+                <input id="slide-5" name="carrousel" type="radio" />
+                <div class="slide">
+                  <label for="slide-4" class="back">◀</label>
+                  <div class="slide-content">
+                    <img src="img/logo_parceiros/hc.png" alt="Logo parceiro" class="partner-logo">
+                  </div>
+                  <label for="slide-6" class="forward">▶</label>
+                </div>
+
+                <input id="slide-6" name="carrousel" type="radio" />
+                <div class="slide">
+                  <label for="slide-5" class="back">◀</label>
+                  <div class="slide-content">
+                    <img src="img/logo_parceiros/hpaes.png" alt="Logo parceiro" class="partner-logo">
+                  </div>
+                  <label for="slide-7" class="forward">▶</label>
+                </div>
+
+                <input id="slide-7" name="carrousel" type="radio" />
+                <div class="slide">
+                  <label for="slide-6" class="back">◀</label>
+                  <div class="slide-content">
+                    <img src="img/logo_parceiros/icertus.png" alt="Logo parceiro" class="partner-logo">
+                  </div>
+                  <label for="slide-8" class="forward">▶</label>
+                </div>
+
+                <input id="slide-8" name="carrousel" type="radio" />
+                <div class="slide">
+                  <label for="slide-7" class="back">◀</label>
+                  <div class="slide-content">
+                    <img src="img/logo_parceiros/krc.png" alt="Logo parceiro" class="partner-logo">
+                  </div>
+                  <label for="slide-9" class="forward">▶</label>
+                </div>
+
+                <input id="slide-9" name="carrousel" type="radio" />
+                <div class="slide">
+                  <label for="slide-8" class="back">◀</label>
+                  <div class="slide-content">
+                    <img src="img/logo_parceiros/srm.png" alt="Logo parceiro" class="partner-logo">
+                  </div>
+                  <label for="slide-10" class="forward">▶</label>
+                </div>
+
+                <input id="slide-10" name="carrousel" type="radio" />
+                <div class="slide">
+                  <label for="slide-9" class="back">◀</label>
+                  <div class="slide-content">
+                    <img src="img/logo_parceiros/wow.png" alt="Logo parceiro" class="partner-logo">
+                  </div>
+                  <label for="slide-0" class="forward">▶</label>
+                </div>
+                
+              </section>
+        </article>
+        <article class="faq-article">
+            <h1 class="faq-title">Ficou com alguma dúvida?</h1>
+            <div class="flex flex--jc-center flex--ai-center">
+                <div class="flex-column">
+                    <details>
+                        <summary>O que é a Vem Money?</summary>
+                        <p>
+                            Somos uma plataforma de soluções de crédito para saúde. Ajudamos pessoas que não possuem plano de saúde a realizarem cirurgias,
+                            tratamentos, procedimentos de saúde, estéticos e odontológicos pagando em até 36x com taxas acessíveis.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Quais procedimentos posso realizar?</summary>
+                        <p>
+                            Com o crédito para saúde da Vem Money, você pode realizar cirurgias emergenciais, procedimentos estéticos (cirúrgicos e não cirúrgicos) e procedimentos odontológicos.
+                        </p>
+                      </details>
+                      <details>
+                        <summary>Quais as  vantagens de ser parceiro Vem Money?</summary>
+                        <p>
+                            Recebimento antes da realização do procedimento;<br>
+                            Poder atender pacientes que não possuem limite no cartão de crédito;<br>
+                            Oferecer uma nova forma de pagamento para seus pacientes;<br>
+                            Parcelar para o cliente e receber à vista.
+                        </p>
+                      </details>
+                      <details>
+                        <summary>Como parcelar a cirurgia no boleto em minha clínica ou hospital?</summary>
+                        <p>
+                            Basta preencher o formulário para cadastro de parceiros e enviar a documentação solicitada e seu acesso será liberado em até 72hs.
+                        </p>
+                      </details>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="flex flex--jc-center">
+            <div class="flex-column">
+                <img src="img/vm_mono_logo.png" alt="Logo Vem Money" class="enterprise-logo">
+                <span>SRTVN Qd. 702 Bloco P SALA 1075 - Asa Norte, Brasília - DF, 70719-900 CNPJ: 46.584.480/0001-86</span>
+            </div>
+            <div class="flex-column">
+                <span><b>Vem Money</b></span>
+                <ul class="footer-navbar">
+                    <li class="footer-navbar__item">
+                        <a href="#" class="footer-navbar__link">Para você</a>
+                    </li>
+                    <li class="footer-navbar__item">
+                        <a href="#" class="footer-navbar__link">Para clínicas</a>
+                    </li>
+                    <li class="footer-navbar__item">
+                        <a href="#" class="footer-navbar__link">Sobre nós</a>
+                    </li>
+                    <li class="footer-navbar__item">
+                        <a href="#" class="footer-navbar__link">Ajuda</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-column">
+                <span><b>Redes sociais</b></span>
+                <div class="social-container">
+                    <img src="img/imagens_inicio/instagram.svg" alt="Ícone instagram" class="social-icon">
+                    <a href="https://instagram.com/vemmoneybr" class="social-link">Instagram</a>
+                </div>
+                <div class="social-container">
+                    <img src="img/imagens_inicio/facebook.svg" alt="Ícone instagram" class="social-icon">
+                    <a href="https://www.facebook.com/vem.money" class="social-link">Facebook</a>
+                </div>
+                <div class="social-container">
+                    <img src="img/imagens_inicio/linkedin.svg" alt="Ícone instagram" class="social-icon">
+                    <a href="https://www.linkedin.com/company/vemmoney/" class="social-link">Linkedin</a>
+                </div>
+            </div>
+        </div>
+        <div class="legal-infors">
+            <h1>Informações Legais</h1>
+            <p>A Vem Money não é uma instituição financeira. Somos uma plataforma de empréstimos online e prestação de serviços de correspondente bancário nos termos do artigo 2º, da Resolução CMN nº 3.954, de 24 de fevereiro de 2011 atuando para as instituições financeiras.</p>
+            <p>SAC Vem Money - Disponível de 2ª a 6ª feira, das 09hs às 18hs, exceto feriados. Para informações, reclamações, cancelamentos ou elogios: contato@vemmoney.com.br ou WhatsApp (61) 4040-4997.</p>
+            <p>EMPRÉSTIMO PESSOAL ONLINE: Antes de contratar sua linha de crédito, consulte as taxas de juros, tributos, tarifas, pagamentos a terceiros, seguros e demais condições aplicáveis. Crédito sujeito a análise. As taxas serão apresentadas em tempo de proposta. Consulte o CET (Custo Efetivo Total) antes de contratar. Use o crédito de forma consciente. As taxas de juros do produto de crédito pessoal variam de 1,75% a.m. (21,34% a.a.) a 9,90% a.m. (210,43% a.a.). A Vem Money tem total compromisso com simplicidade e transparência. Antes de contratar um produto de crédito pessoal, será exibido de forma clara: a taxa de juros aplicada, tarifas cobradas, impostos (IOF) e o custo efetivo total (CET). Sabemos que não é fácil entender todos esses valores e em caso de dúvidas, estamos à disposição para esclarecê-los. Exemplo: um empréstimo de R$ 10.000,00 em 24 meses, com juros de 2.0 % a.m. (26.82% a.a.) e CET de 2.24 % a.m. (30.52% a.a.), terá parcelas de R$ 546,07 e um custo total de R$ 13.105,68. Estes valores são ilustrativos e podem variar de acordo com os critérios de aprovação de crédito da instituição financeira.EMPRÉSTIMO PESSOAL ONLINE: Antes de contratar sua linha de crédito, consulte as taxas de juros, tributos, tarifas, pagamentos a terceiros, seguros e demais condições aplicáveis. Crédito sujeito a análise. As taxas serão apresentadas em tempo de proposta. Consulte o CET (Custo Efetivo Total) antes de contratar. Use o crédito de forma consciente. As taxas de juros do produto de crédito pessoal variam de 1,75% a.m. (21,34% a.a.) a 9,90% a.m. (210,43% a.a.). A Vem Money tem total compromisso com simplicidade e transparência. Antes de contratar um produto de crédito pessoal, será exibido de forma clara: a taxa de juros aplicada, tarifas cobradas, impostos (IOF) e o custo efetivo total (CET). Sabemos que não é fácil entender todos esses valores e em caso de dúvidas, estamos à disposição para esclarecê-los. Exemplo: um empréstimo de R$ 10.000,00 em 24 meses, com juros de 2.0 % a.m. (26.82% a.a.) e CET de 2.24 % a.m. (30.52% a.a.), terá parcelas de R$ 546,07 e um custo total de R$ 13.105,68. Estes valores são ilustrativos e podem variar de acordo com os critérios de aprovação de crédito da instituição financeira.</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <div class="chat">
+        <div class="chat-header">
+            <img src="img/imagens_inicio/chat-dots.svg" alt="Ícone de chat" class="chat-icon">
+            <span>Chat Online</span>
+        </div>
+        <form id="chat-form">
+            <label for="person-name--chat">Nome*</label>
+            <input type="text" name="person-name--chat" id="person-name--chat" required>
+            <label for="person-email--chat">Email*</label>
+            <input type="text" name="person-email--chat" id="person-email--chat" required>
+            <label for="person-phone--chat">Telefone*</label>
+            <input type="text" name="person-phone--chat" id="person-phone--chat" required>
+            <label for="person-topic--chat">Assunto*</label>
+            <input type="text" name="person-topic--chat" id="person-topic--chat" required>
+            <input type="submit" value="Enviar" class="chat-submit-btn">
+        </form>
+    </div>
+    <div class="chat-icon-container" onclick="showChat()">
+        <img src="img/imagens_inicio/chat-dots.svg" alt="Ícone do chat" class="chat-icon">
+    </div>
+    <script src="js/main.js"></script> <!-- js file link -->
+</body>
+</html>

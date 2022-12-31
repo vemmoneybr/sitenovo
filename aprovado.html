@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
+    <!-- --- -->
+    <!-- css files link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/simulação.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- --- -->
+    <title>vm_prototipo</title>
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <div class="flex flex--jc-sbetween flex--ai-center max-height">
+            <div class="flex-column">
+                <img src="img/vm_logo.png" alt="Logo Vem Money" class="enterprise-logo">
+            </div>
+            <div class="flex-column">
+                <ul class="page-steps">
+                    <li class="page-steps__step">
+                        <a href="#" class="page-steps__link page-steps__link--sth before">Procedimento</a>
+                    </li>
+                    <li class="page-steps__step">
+                        <a href="#" class="page-steps__link page-steps__link--sth">Valor</a>
+                    </li>
+                    <li class="page-steps__step">
+                        <a href="#" class="page-steps__link page-steps__link--sth">Dados</a>
+                    </li>
+                    <li class="page-steps__step">
+                        <a href="aprovado.html" class="page-steps__link after page-steps__link--sth">Simulação</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-column">
+                <nav>
+                    <img src="img/list.svg" alt="Ícone menu mobile" class="mobile-menu-icon" onclick="showHeaderNavbar()">
+                    <ul class="header-navbar">
+                        <li class="header-navbar__item">
+                            <a href="#" class="header-navbar__link">Entrar</a>
+                        </li>
+                        <li class="header-navbar__item">
+                            <a href="#" class="header-navbar__link">Criar Conta</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+        <div class="media-flex flex--jc-sevenly">
+            <div class="flex-column">
+                <h1 class="step-label"><b>Parabéns!</b><br>Sua simulação foi concluída com sucesso!</h1>
+                <div class="left-container">
+                    <table class="simulation-data">
+                        <tr>
+                            <td>Procedimento</td>
+                            <td>Cirurgia emergencial</td>
+                        </tr>
+                        <tr>
+                            <td>Valor solicitado</td>
+                            <td>R$ 15.000,00</td>
+                        </tr>
+                        <tr>
+                            <td>Quantidade de parcelas</td>
+                            <td>24x</td>
+                        </tr>
+                        <tr>
+                            <td><b>Valor da prestação</b></td>
+                            <td><b>R$ 771,58</b></td>
+                        </tr>
+                    </table>
+                    <div class="simulation-status-container">
+                        <div class="status">
+                            <img src="img/imagens_simulacao/yes.svg" alt="Ilustração do tipo de cirurgia" class="status-illustration">
+                            <span class="status-name">Recusado</span>
+                        </div>
+                        <div class="status">
+                            <img src="img/imagens_simulacao/default.svg" alt="Ilustração do tipo de cirurgia" class="status-illustration">
+                            <span class="status-name">Pré-aprovado</span>
+                        </div>
+                        <div class="status status--sth">
+                            <img src="img/imagens_simulacao/yes.svg" alt="Ilustração do tipo de cirurgia" class="status-illustration">
+                            <span class="status-name">Aprovado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container flex-column flex flex--fd-column flex--ai-center">
+                <img src="img/imagens_simulacao/yes.svg" alt="Ilustração simulação" class="simulation-illustration">
+                <span class="simulation-result">Aprovado</span>
+                <p class="simulation-explanation">
+                    Você está bem próximo de realizar o seu procedimento.<br><br>Agora é só enviar para nós o pedido médico com os documentos pessoais para liberação do valor solicitado.
+                </p>
+                <a href="#" class="send-documents-btn">Enviar documentação</a>
+            </div>
+        </div>
+    </main>
+    <!-- main end -->
+    <!-- page steps -->
+    <div class="mobile-page-steps">
+        <div class="progress-track" style="--progress-width: 100%;"></div>
+        <div style="width: 80%;" class="flex flex--jc-sbetween max-height flex--ai-center">
+            <div class="flex-column">
+                <img src="img/checked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name checked">Procedimento</span>
+            </div>
+            <div class="flex-column">
+                <img src="img/checked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name checked">Valor</span>
+            </div>
+            <div class="flex-column">
+                <img src="img/checked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name checked">Dados</span>
+            </div>
+            <div class="flex-column">
+                <img src="img/checked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name checked">Simulação</span>
+            </div>
+        </div>
+    </div>
+    <!-- page steps end -->
+    <script src="js/main.js"></script> <!-- js file link -->
+</body>
+</html>

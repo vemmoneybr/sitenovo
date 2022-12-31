@@ -1,0 +1,252 @@
+@media (max-width: 1256px) {
+    .header-navbar {
+        left: 0;
+        border-top: 1px solid #00000025;
+        clip-path: inset(0 0 100% 0);
+        background-color: #fff;
+        box-shadow: 0 5px 10px #00000010;
+        position: absolute;
+        padding: 0;
+        width: 100vw;
+        top: 80px;
+        margin: 0;
+        transition: 0.6s ease;
+        outline: none;
+        z-index: 99;
+    }
+    .show-header-navbar {
+        clip-path: inset(0 0 0 0);
+    }
+    .header-navbar__item {
+        border-bottom: 1px solid #00000025;
+        display: block;
+    }
+    .header-navbar__link {
+        display: block;
+        padding: 20px 20px 20px 30px;
+        color: #00000090;
+    }
+    .header-navbar__link:hover {
+        background-color: #fafafa;
+        text-decoration: underline;
+    }
+    .mobile-menu-icon {
+        display: unset;
+    }
+}
+@media (max-width: 1150px) {
+    .media-fd-column {
+        flex-direction: column-reverse;
+    }
+    .left-container {
+        box-shadow: 0 4px 8px #00000010;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+    .step-label {
+        border-radius: unset;
+        font-size: 26px;
+        background-color: unset;
+        text-align: center;
+        color: var(--secondary-color);
+        width: unset;
+    }
+    .surgery-type-selection {
+        margin-top: 30px;
+        grid-template-columns: auto auto;
+        gap: 30px;
+    }
+    .surgery-type, .status {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: unset;
+        height: 100px;
+        padding: 0 30px;
+    }
+    .surgery-type__name, .status-name {
+        font-size: 22px;
+        text-align: left;
+        color: var(--secondary-color);
+        justify-content: unset;
+        padding-left: 10px;
+        font-weight: 700;
+    }
+    .surgery-type__image, .status-illustration {
+        width: 60px;
+        height: 60px;
+    }
+    .media-flex {
+        justify-content: unset;
+        flex-direction: column;
+    }
+    .status {
+        width: fit-content;
+    }
+    .redirect-card__image {
+        width: 75px;
+    }
+    .redirect-card__link {
+        font-size: 18px;
+        width: 40vw;
+    }
+}
+@media (max-width: 950px) {
+    .status {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .status-name {
+        padding: 0;
+        font-size: 18px;
+        width: 130px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .status-illustration {
+        width: 80px;
+        padding: 10px 0;
+    }
+    .page-steps {
+        display: none;
+    }
+    main {
+        padding-bottom: 100px;
+    }
+    .mobile-page-steps {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        height: 60px;
+        background-color: #fff;
+        box-shadow: 0 0 10px #00000025;
+        bottom: 0;
+        z-index: 99;
+    }
+    .step-icon {
+        margin: 0 auto;
+        display: block;
+    }
+    .step-name {
+        display: block;
+        margin-top: 5px;
+        font-size: 13px;
+        color: #00000080;
+    }
+    .step-name.checked {
+        color: var(--secondary-color);
+    }
+    .progress-track {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #e5ecff;
+        top: 20px;
+        z-index: -2;
+    }
+    .progress-track::after {
+        content: "";
+        width: var(--progress-width);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-color: var(--secondary-color);
+        border-radius: 0 3px 3px 0;
+    }
+}
+@media (max-width: 720px) {
+    .redirect-card {
+        box-shadow: 0 0 20px #00000025;
+    }
+    .redirect-card__text {
+        font-size: 24px;
+        width: 300px;
+        word-wrap: break-word;
+    }
+    .redirect-card__link {
+        font-size: 20px;
+        width: 80vw;
+    }
+    .redirect-flex {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+    }
+    .welcome-title {
+        padding: 100px 30px;
+        background-image: unset;
+        background-color: #00000050;
+        height: calc(100% - 200px);
+        width: unset;
+        text-align: center;
+    }
+    .status {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: unset;
+        height: 100px;
+        padding: 0 30px;
+        margin: 10px 0;
+    }
+    .status-name {
+        font-size: 22px;
+        text-align: left;
+        color: var(--secondary-color);
+        justify-content: unset;
+        padding-left: 10px;
+        font-weight: 700;
+    }
+    .status-illustration {
+        width: 60px;
+        height: 60px;
+    }
+    .simulation-status-container {
+        flex-direction: column;
+    }
+    .surgery-type-selection {
+        grid-template-columns: auto;
+    }
+    .personal-data__field-container {
+        width: fit-content;
+    }
+    .personal-data__grid {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .personal-data__fields {
+        margin-bottom: 30px;
+        width: calc(80vw - 20px);
+    }
+}
+@media (max-width: 530px) {
+    .welcome-title {
+        font-size: 26px;
+    }
+    .login-illustration {
+        width: 375px;
+    }
+    .simulation-data tr td {
+        font-size: 13px;
+    }
+    .simulation-data tr td b {
+        font-size: 16px;
+    }
+}
+@media (max-width: 491px) {
+    .redirect-card__text {
+        font-size: 20px;
+        width: 250px;
+    }
+    .step-label {
+        font-size: 18px;
+    }
+}

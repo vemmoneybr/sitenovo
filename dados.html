@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
+    <!-- --- -->
+    <!-- css files link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dados.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- --- -->
+    <title>vm_prototipo</title>
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <div class="flex flex--jc-sbetween flex--ai-center max-height">
+            <div class="flex-column">
+                <img src="img/vm_logo.png" alt="Logo Vem Money" class="enterprise-logo">
+            </div>
+            <div class="flex-column">
+                <ul class="page-steps">
+                    <li class="page-steps__step">
+                        <a href="#" class="page-steps__link page-steps__link--sth before">Procedimento</a>
+                    </li>
+                    <li class="page-steps__step">
+                        <a href="#" class="page-steps__link page-steps__link--sth">Valor</a>
+                    </li>
+                    <li class="page-steps__step">
+                        <a href="#" class="page-steps__link page-steps__link--sth">Dados</a>
+                    </li>
+                    <li class="page-steps__step">
+                        <a href="aprovado.html" class="page-steps__link after">Simulação</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-column">
+                <nav>
+                    <img src="img/list.svg" alt="Ícone menu mobile" class="mobile-menu-icon" onclick="showHeaderNavbar()">
+                    <ul class="header-navbar">
+                        <li class="header-navbar__item">
+                            <a href="#" class="header-navbar__link">Entrar</a>
+                        </li>
+                        <li class="header-navbar__item">
+                            <a href="#" class="header-navbar__link">Criar Conta</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+        <div class="media-flex flex--jc-sevenly">
+            <div class="flex-column flex media-fd-column flex--ai-center">
+                <h1 class="step-label">Preencha os seus dados para simulação do valor da parcela</h1>
+                <img src="img/imagens_dados/login.svg" alt="Ilustração login" class="login-illustration">
+            </div>
+            <div class="flex-column flex flex--fd-column flex--ai-center">
+                <img src="img/imagens_dados/health_worker_form.svg" alt="Ilustração documentação" class="form-illustration">
+                <span class="form-name">Dados pessoais</span>
+                <form class="personal-data flex flex--fd-column flex--ai-center">
+                    <div class="personal-data__field-container">
+                        <label for="person-name">Nome completo</label>
+                        <input type="text" class="personal-data__fields" name="person-name" id="person-name" placeholder="Digite aqui...">
+                    </div>
+                    <div class="personal-data__grid">
+                        <div class="grid-column">
+                            <label for="person-cpf">CPF</label>
+                            <input type="text" class="personal-data__fields" name="person-cpf" id="person-cpf" placeholder="xxx.xxx.xxx-xx">
+                        </div>
+                        <div class="grid-column">
+                            <label for="person-phone">Telefone</label>
+                            <input type="number" class="personal-data__fields" name="person-phone" id="person-phone" placeholder="(xx) xxxxx-xxxx">
+                        </div>
+                        <div class="grid-column">
+                            <label for="person-age">Data de nascimento</label>
+                            <input type="date" class="personal-data__fields" name="person-age" id="person-age" placeholder="xx/xx/xxxx">
+                        </div>
+                        <div class="grid-column">
+                            <label for="person-career">Profissão</label>
+                            <input type="text" class="personal-data__fields" name="person-career" id="person-career" placeholder="Digite aqui...">
+                        </div>
+                        <div class="grid-column">
+                            <label for="person-email">E-mail</label>
+                            <input type="email" class="personal-data__fields" name="person-email" id="person-email" placeholder="xxxxx@xmail.com">
+                        </div>
+                        <div class="grid-column">
+                            <label for="person-income">Renda</label>
+                            <input type="number" class="personal-data__fields" name="person-income" id="person-income" placeholder="em R$ (reais)">
+                        </div>
+                    </div>
+                    <a href="aprovado.html" class="submit-btn">Quero simular</a>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- main end -->
+
+    <!-- page steps -->
+    <div class="mobile-page-steps">
+        <div class="progress-track" style="--progress-width: 75%;"></div>
+        <div style="width: 80%;" class="flex flex--jc-sbetween max-height flex--ai-center">
+            <div class="flex-column">
+                <img src="img/checked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name checked">Procedimento</span>
+            </div>
+            <div class="flex-column">
+                <img src="img/checked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name checked">Valor</span>
+            </div>
+            <div class="flex-column">
+                <img src="img/checked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name checked">Dados</span>
+            </div>
+            <div class="flex-column">
+                <img src="img/unchecked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name">Simulação</span>
+            </div>
+        </div>
+    </div>
+    <!-- page steps end -->
+    <script src="js/main.js"></script> <!-- js file link -->
+</body>
+</html>

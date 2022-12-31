@@ -1,0 +1,95 @@
+/* main style */
+/* simulation status style */
+.simulation-illustration {
+    width: 80px;
+    padding: 10px 0;
+    filter: invert(79%) sepia(52%) saturate(4283%) hue-rotate(119deg) brightness(95%) contrast(91%);
+}
+.simulation-explanation {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 300px;
+}
+.send-documents-btn {
+    margin-top: 30px;
+    background-color: var(--primary-color);
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+}
+.step-label {
+    font-size: 20px;
+    width: 500px;
+}
+.step-label b {
+    font-size: 30px;
+}
+.simulation-data {
+    width: 100%;
+}
+.simulation-data tr td {
+    padding: 5px 0;
+}
+.simulation-data tr td b {
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+.simulation-status-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px #00000020;
+}
+.status-illustration {
+    width: 80px;
+    padding: 10px 0;
+    filter: invert(79%) sepia(52%) saturate(4283%) hue-rotate(119deg) brightness(95%) contrast(91%);
+}
+.simulation-result {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.status-name {
+    font-size: 18px;
+    color: var(--primary-color);
+    width: 130px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.left-container {
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+}
+.status--sth {
+    background-color: var(--primary-color);
+}
+.status--sth .status-name {
+    color: #fff;
+}
+.status--sth .status-illustration {
+    filter: invert(100%) sepia(11%) saturate(7458%) hue-rotate(223deg) brightness(119%) contrast(109%);
+}
+/* --- */
+/* --- */

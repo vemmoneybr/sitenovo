@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
+    <!-- --- -->
+    <!-- css files link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/procedimento.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- --- -->
+    <title>vm_prototipo</title>
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <div class="flex flex--jc-sbetween flex--ai-center max-height">
+            <div class="flex-column">
+                <img src="img/vm_logo.png" alt="Logo Vem Money" class="enterprise-logo">
+            </div>
+            <div class="flex-column">
+                <ul class="page-steps">
+                    <li class="page-steps__step">
+                        <a href="#" class="page-steps__link page-steps__link--sth before">Procedimento</a>
+                    </li>
+                    <li class="page-steps__step">
+                        <a href="#" class="page-steps__link">Valor</a>
+                    </li>
+                    <li class="page-steps__step">
+                        <a href="#" class="page-steps__link">Dados</a>
+                    </li>
+                    <li class="page-steps__step">
+                        <a href="aprovado.html" class="page-steps__link after">Simulação</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-column">
+                <nav>
+                    <img src="img/list.svg" alt="Ícone menu mobile" class="mobile-menu-icon" onclick="showHeaderNavbar()">
+                    <ul class="header-navbar">
+                        <li class="header-navbar__item">
+                            <a href="#" class="header-navbar__link">Entrar</a>
+                        </li>
+                        <li class="header-navbar__item">
+                            <a href="#" class="header-navbar__link">Criar Conta</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+        <div class="media-flex flex--jc-sevenly">
+            <div class="flex-column">
+                <h1 class="step-label">Selecione o tipo de procedimento que deseja realizar</h1>
+                <div class="left-container">
+                    <div class="surgery-type-selection">
+                        <div class="surgery-type">
+                            <img src="img/imagens_procedimento/mouth.svg" alt="Ilustração do tipo de cirurgia" class="surgery-type__image">
+                            <span class="surgery-type__name">Cirurgia plástica</span>
+                        </div>
+                        <div class="surgery-type surgery-type--sth">
+                            <img src="img/imagens_procedimento/surgical_sterilization.svg" alt="Ilustração do tipo de cirurgia" class="surgery-type__image">
+                            <span class="surgery-type__name">Cirurgia emergencial</span>
+                        </div>
+                        <div class="surgery-type">
+                            <img src="img/imagens_procedimento/odontology_implant.svg" alt="Ilustração do tipo de cirurgia" class="surgery-type__image">
+                            <span class="surgery-type__name">Procedimento odontológico</span>
+                        </div>
+                        <div class="surgery-type">
+                            <img src="img/imagens_procedimento/stethoscope.svg" alt="Ilustração do tipo de cirurgia" class="surgery-type__image">
+                            <span class="surgery-type__name">Outros</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-column ta-center">
+                <img src="img/imagens_procedimento/surgical_sterilization.svg" alt="Ilustração do tipo de cirurgia" class="surgery-type__image">
+                <span class="st-name--sth">Cirurgia emergencial</span>
+                <div class="questions">
+                    <span class="question-wording">Você já possui um pedido médico ou realizou a avaliação cirúrgica?</span>
+                    <div class="question-answers">
+                        <div class="radio-group">
+                            <label class="radio">
+                                <input type="radio" name="valid-surgert" checked>
+                                Sim
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="valid-surgert">
+                                Não
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions">
+                    <span class="question-wording">De quanto você precisa para realizar o seu procedimento?</span>
+                    <div class="question-answers">
+                        <div class="box">
+                            <div class="slider">
+                                <input type="range" id="loan-amount-slider" min="0" max="15000" value="7500" oninput="changeLoanAmountValue(this)">
+                            </div>
+                            <div class="value" id="loan-amount-txt">7500</div>
+                        </div>
+                        <label for="loan-amount-field">Ou digite aqui</label>
+                        <input type="number" class="loan-amount" id="loan-amount-field" placeholder="R$ 15.000,00" oninput="changeLoanAmountValue(this)">
+                    </div>
+                </div>
+                <div class="questions">
+                    <span class="question-wording">Em quantas parcelas deseja pagar?</span>
+                    <div class="question-answers">
+                        <div class="radio-group">
+                            <label class="radio">
+                                <input type="radio" name="installments-qty" checked>
+                                6x
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="installments-qty">
+                                12x
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="installments-qty">
+                                24x
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="installments-qty">
+                                36x
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <a href="dados.html" class="submit-btn">Avançar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main end -->
+    <!-- page steps -->
+    <div class="mobile-page-steps">
+        <div class="progress-track" style="--progress-width: 30%;"></div>
+        <div style="width: 80%;" class="flex flex--jc-sbetween max-height flex--ai-center">
+            <div class="flex-column">
+                <img src="img/checked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name checked">Procedimento</span>
+            </div>
+            <div class="flex-column">
+                <img src="img/unchecked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name">Valor</span>
+            </div>
+            <div class="flex-column">
+                <img src="img/unchecked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name">Dados</span>
+            </div>
+            <div class="flex-column">
+                <img src="img/unchecked.svg" alt="Ícone checked / unchecked" class="step-icon">
+                <span class="step-name">Simulação</span>
+            </div>
+        </div>
+    </div>
+    <!-- page steps end -->
+    <script src="js/main.js"></script> <!-- js file link -->
+</body>
+</html>
